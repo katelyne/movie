@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@model System.Collections.ObjectModel.Collection<DatabaseTutorial.Models.MovieModel>
+<h2>MovieSet</h2>
+
+<html>
+<head>
+    <title>MovieSet</title>
+</head>
+<body>
+<div>
+    @foreach (var item in Model)
+    {
+        <div>
+            <b>@item.Name</b>
+            <i>@item.ReleaseDate</i>
+        </div>
+    }
+</div>
+</body>
+</html>
